@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <header>Мой список покупок</header>
+    <form action="qqw" method="GET">
+
+        <fieldset>
+            <legend>Написать в магазин</legend>
+            <label for="name">Ваше имя</label> <br>
+            <input type="text" name="registration_login" id="name">
+            <br>
+            <label for="email">Ваш email</label> <br>
+            <input type="email" name="registration_email" id="email">
+            <br>
+            <input type="submit" value="отправить">
+        </fieldset>
+
+        <fieldset>
+            <legend>Список</legend>
+            <label for="list">Список покупок</label>
+            <br>
+            <input type="checkbox" name="buy1" id="b1" value="b1">
+            <label for="b1">огурец</label>
+            <br>
+            <input type="checkbox" name="buy2" id="b2" value="b2">
+            <label for="b2">помидор</label>
+            <br>
+            <input type="checkbox" name="buy3" id="b3" value="b3">
+            <label for="b3">сок</label>
+            <br>
+            <input type="checkbox" name="buy4" id="b4" value="b4">
+            <label for="b4">бананы</label>
+            <br>
+            <label for="position">Как ваше настроение?</label> <br>
+            <select name="you" id="position">
+                <option value="well">хорошо</option>
+                <option value="fine">отлично</option>
+                <option value="wondrful">замечательно</option>
+                <option hidden disabled selected>Choose one</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Дата</legend>
+            <label for="when"> На когда надо купить</label> <br>
+            <input type="date" name="dataWhen" id="when">
+            <br>
+            <label for="about">Заметки</label> <br>
+            <textarea name="aboutMessage" id="about"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Сохранить</button>
+        <button type="reset">Очистить</button>
+    </form>
+
+</body>
+
+</html>
